@@ -1,0 +1,47 @@
+{
+    "address": "DRUiH1Vd6zUvrZXKmKPwKnYq8jLiUYJdffStA1ETmc2v",
+    "metadata": {
+      "name": "pacman_game",
+      "version": "0.1.0",
+      "spec": "0.1.0",
+      "description": "Created with Anchor"
+    },
+    "instructions": [
+      {
+        "name": "initialize",
+        "discriminator": [
+          175,
+          175,
+          109,
+          31,
+          13,
+          152,
+          155,
+          237
+        ],
+        "accounts": [],
+        "args": []
+      },
+      {
+        "name": "play_game",
+        "discriminator": [
+          37,
+          88,
+          207,
+          85,
+          42,
+          144,
+          122,
+          197
+        ],
+        "accounts": [
+          {
+            "name": "player",
+            "writable": true,
+            "signer": true
+          }
+        ],
+        "args": []
+      }
+    ]
+  }
