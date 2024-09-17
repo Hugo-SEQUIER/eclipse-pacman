@@ -11,11 +11,9 @@ pacman_game = "DRUiH1Vd6zUvrZXKmKPwKnYq8jLiUYJdffStA1ETmc2v"
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "custom"
+cluster = "https://staging-rpc.dev2.eclipsenetwork.xyz"
 wallet = "~/.config/solana/id.json"
 
-[provider.cluster]
-custom = "https://staging-rpc.dev2.eclipsenetwork.xyz"
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
