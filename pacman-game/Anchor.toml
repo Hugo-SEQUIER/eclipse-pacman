@@ -11,7 +11,7 @@ pacman_game = "DjUfeeJXsQHPd811GHmhB6zVraAyBBVzv365BA8Ruf8T"
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "Localnet"
+cluster = "https://staging-rpc.dev2.eclipsenetwork.xyz"
 wallet = "~/.config/solana/id.json"
 
 [scripts]

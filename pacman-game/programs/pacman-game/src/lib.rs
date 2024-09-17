@@ -6,11 +6,15 @@ declare_id!("DjUfeeJXsQHPd811GHmhB6zVraAyBBVzv365BA8Ruf8T");
 pub mod pacman_game {
     use super::*;
 
-    pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
-        msg!("Greetings from: {:?}", ctx.program_id);
+    pub fn start_game(ctx: Context<StartGame>) -> ProgramResult {
+        // Placeholder logic to start the game
+        msg!("Pacman game has started!");
         Ok(())
     }
 }
 
 #[derive(Accounts)]
-pub struct Initialize {}
+pub struct StartGame<'info> {
+    #[account(mut)]
+    pub user: Signer<'info>,
+}
