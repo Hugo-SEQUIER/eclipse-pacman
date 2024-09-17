@@ -6,7 +6,7 @@ declare_id!("DjUfeeJXsQHPd811GHmhB6zVraAyBBVzv365BA8Ruf8T");
 pub mod pacman_game {
     use super::*;
 
-    pub fn start_game(ctx: Context<StartGame>) -> ProgramResult {
+    pub fn start_game(ctx: Context<StartGame>) -> Result<()> {
         // Placeholder logic to start the game
         msg!("Pacman game has started!");
         Ok(())
