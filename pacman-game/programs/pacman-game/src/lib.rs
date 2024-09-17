@@ -7,10 +7,21 @@ pub mod pacman_game {
     use super::*;
 
     pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
-        msg!("Greetings from: {:?}", ctx.program_id);
+        Ok(())
+    }
+
+    pub fn play_game(ctx: Context<PlayGame>) -> Result<()> {
+        // Game logic or state updates can go here
+        msg!("User has played the game!");
         Ok(())
     }
 }
 
 #[derive(Accounts)]
 pub struct Initialize {}
+
+#[derive(Accounts)]
+pub struct PlayGame<'info> {
+    #[account(mut)]
+    pub player: Signer<'info>,
+}
